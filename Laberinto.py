@@ -28,3 +28,10 @@ def recorrerlaberinto(laberinto):
         elif movimiento != "abajo" and fila-1 < n and laberinto[fila-1][columna] != "x":
             fila -= 1
             movimiento.append("arriba")
+        elif movimiento != "izquierda" and columna +1 < n and laberinto[fila][columna+1] != "x":
+            columna += 1
+            movimiento.append("derecha")
+        elif movimiento != "derecha" and columna-1 > 0 and laberinto[fila][columna-1] != "x":
+            columna -= 1
+            movimiento.append("izquierda")
+    return(recorrerlaberinto)
