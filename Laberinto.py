@@ -35,3 +35,6 @@ def recorrerlaberinto(laberinto):
             columna -= 1
             movimiento.append("izquierda")
     return(recorrerlaberinto)
+
+
+print(recorrerlaberinto(laberinto1))
