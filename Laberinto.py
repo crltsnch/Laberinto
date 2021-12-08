@@ -20,4 +20,11 @@ for i in laberinto1:
 def recorrerlaberinto(laberinto):
     fila=columna=0
     movimiento= ["abajo"]
-    
+    n=5
+    while (fila< n-1 and columna<n):
+        if movimiento != "arriba" and fila+1 < n and laberinto[fila +1][columna] != "x":
+            fila +=1
+            movimiento.apppen("abajo")
+        elif movimiento != "abajo" and fila-1 < n and laberinto[fila-1][columna] != "x":
+            fila -= 1
+            movimiento.append("arriba")
