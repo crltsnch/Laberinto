@@ -1,11 +1,3 @@
-laberinto = [
-[' ', 'X', 'X', 'X', 'X'],
-[' ', 'X', ' ', ' ', ' '], 
-[' ', 'X', ' ', 'X', ' '], 
-[' ', ' ', ' ', 'X', ' '], 
-['X', 'X', 'X', 'X', 'S']
-]
-
 def laberinto(dimension, muro):
     laberinto=[]
     for i in range(dimension):
@@ -20,3 +12,7 @@ def laberinto(dimension, muro):
 
 
 muro = ((0,1), (0,2), (0,3), (0,4), (1,1), (2,1), (2,3), (3,3), (4,0), (4,1), (4,2), (4,3))
+laberinto1=laberinto(5, muro)
+
+for i in laberinto1:
+    print(i)
