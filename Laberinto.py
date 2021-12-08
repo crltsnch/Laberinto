@@ -16,3 +16,8 @@ laberinto1=laberinto(5, muro)
 
 for i in laberinto1:
     print(i)
+
+def recorrerlaberinto(laberinto):
+    fila=columna=0
+    movimiento= ["abajo"]
+    
