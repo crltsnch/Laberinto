@@ -3,10 +3,11 @@ def laberinto(dimension, muro):
     for i in range(dimension):
         fila=[]
         for j in range(dimension):
-            if tuple(i, j) in muro:
+            if tuple([i, j]) in muro:
                 fila.append("x")
             else:
                 fila.append(" ")
+                
         laberinto.append(fila)
     return(laberinto)
 
@@ -35,7 +36,7 @@ def recorrerlaberinto(laberinto):
         elif movimiento[-1] != "derecha" and columna-1 > 0 and laberinto[fila][columna-1] != "x":
             columna -= 1
             movimiento.append("izquierda")
-    return(recorrerlaberinto)
+    return(movimiento)
 
 
 print(recorrerlaberinto(laberinto1))
